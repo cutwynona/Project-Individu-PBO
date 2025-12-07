@@ -1,5 +1,5 @@
-// Class SimulasiBus menjalankan program utama untuk mengelola proses naik/turun
-// penumpang, top up saldo, dan menampilkan status bus melalui menu interaktif.
+// Class SimulasiBus berfungsi sebagai program utama yang menampilkan menu,
+// menerima input user, serta memanggil fungsi-fungsi pada class Bus.
 import java.util.Scanner;
 
 public class SimulasiBus {
@@ -7,7 +7,7 @@ public class SimulasiBus {
         Scanner sc = new Scanner(System.in);
         Bus<Penumpang> bus = new Bus<>();
 
-        // Tampilan judul dan animasi sambutan
+        // Tampilan judul 
         System.out.println("\n╔════════════════════════════════════╗");
         System.out.println("║        SISTEM BUS NUSA RIDE        ║");
         System.out.println("╚════════════════════════════════════╝");
@@ -101,7 +101,7 @@ public class SimulasiBus {
                     System.out.println("------------------------------------");
                     break;
 
-                // Menampilkan seluruh status bus (jumlah penumpang, kapasitas, dan info lainnya)
+                // Menampilkan seluruh status bus 
                 case 4:
                     System.out.println("\n===== STATUS BUS =====");
                     System.out.println(bus);
