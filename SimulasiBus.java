@@ -61,6 +61,72 @@ public class SimulasiBus {
                     System.out.println("------------------------------------");
                     break;
 
+                    // Proses menurunkan penumpang berdasarkan nama
+                case 2:
+                    System.out.print("Nama: ");
+                    String namaTurun = sc.nextLine();
+
+                    if (bus.turunkanPenumpang(namaTurun))
+                        System.out.println("Penumpang berhasil turun.");
+                    else
+                        System.out.println("Penumpang tidak ditemukan.");
+
+                    System.out.println("------------------------------------");
+                    break;
+
+                // Proses top up saldo penumpang
+                case 3:
+                    System.out.print("Nama: ");
+                    String namaTopUp = sc.nextLine();
+
+                    System.out.print("Jumlah top up: ");
+                    int jumlah = sc.nextInt();
+                    sc.nextLine();
+
+                    boolean ditemukan = false;
+
+                    // Mencari penumpang berdasarkan nama
+                    for (Penumpang pen : bus.getAllPenumpang()) {
+                        if (pen.getNama().equalsIgnoreCase(namaTopUp)) {
+                            pen.tambahSaldo(jumlah);
+                            System.out.println("Top-up berhasil. Saldo sekarang: " + pen.getSaldo());
+                            ditemukan = true;
+                            break;
+                        }
+                    }
+
+                    if (!ditemukan)
+                        System.out.println("Penumpang tidak ditemukan.");
+
+                    System.out.println("------------------------------------");
+                    break;
+
+                // Menampilkan seluruh status bus 
+                case 4:
+                    System.out.println("\n===== STATUS BUS =====");
+                    System.out.println(bus);
+                    System.out.println("======================");
+                    break;
+
+                // Keluar dari program
+                case 5:
+                    System.out.println("Terima kasih! Sampai jumpa.");
+                    sc.close();
+                    return;
+
+                // Penanganan apabila input tidak valid
+                default:
+                    System.out.println("Pilihan tidak valid.");
+                    System.out.println("------------------------------------");
+                    break;
+            }
+        }
+    }
+}
+
+
+
+
 
 
     
