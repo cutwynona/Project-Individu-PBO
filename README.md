@@ -59,6 +59,7 @@ Project ini merupakan simulasi sistem manajemen penumpang pada Bus Nusa Ride, ya
 9. **Enum** – `JenisPenumpang` (`BIASA`, `PRIORITAS`) untuk membedakan tipe penumpang.
 10. **Collection (ArrayList)** – `ArrayList<T>` digunakan untuk menyimpan penumpang prioritas, biasa, dan berdiri.
 11. **Exception Handling** – Custom exception `SaldoTidakCukup` digunakan saat saldo penumpang tidak mencukupi.
+    
 
 
 ### **Tampilan Output Program**
