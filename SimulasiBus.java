@@ -18,4 +18,18 @@ public class SimulasiBus {
         }
         System.out.println("\n");
 
+        // Perulangan utama untuk menampilkan menu dan memproses input
+        while (true) {
+            System.out.println("\nMENU :");
+            System.out.println("1. Naikkan Penumpang");
+            System.out.println("2. Turunkan Penumpang");
+            System.out.println("3. Tambah Saldo Penumpang");
+            System.out.println("4. Lihat Status Bus");
+            System.out.println("5. Keluar");
+            System.out.print("Pilihan (1-5): "); 
+            int pilih = sc.nextInt();
+            sc.nextLine();
+
+            switch (pilih) {
+
     
