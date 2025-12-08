@@ -61,7 +61,7 @@ public class SimulasiBus {
                     System.out.println("------------------------------------");
                     break;
 
-                    // Proses menurunkan penumpang berdasarkan nama
+                // Proses menurunkan penumpang berdasarkan nama
                 case 2:
                     System.out.print("Nama: ");
                     String namaTurun = sc.nextLine();
@@ -125,8 +125,3 @@ public class SimulasiBus {
 }
 
 
-
-
-
-
-    
