@@ -32,4 +32,21 @@ public class SimulasiBus {
 
             switch (pilih) {
 
+                // Proses menambah penumpang berdasarkan input pengguna
+                case 1:
+                    System.out.print("ID Penumpang: ");
+                    int id = sc.nextInt();
+                    sc.nextLine();
+
+                    System.out.print("Nama: ");
+                    String nama = sc.nextLine();
+
+                    System.out.print("Umur: ");
+                    int umur = sc.nextInt();
+                    sc.nextLine();
+
+                    System.out.print("Hamil (y/n): ");
+                    boolean hamil = sc.nextLine().equalsIgnoreCase("y");
+
+
     
