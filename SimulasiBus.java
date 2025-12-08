@@ -48,5 +48,19 @@ public class SimulasiBus {
                     System.out.print("Hamil (y/n): ");
                     boolean hamil = sc.nextLine().equalsIgnoreCase("y");
 
+                    // Menentukan apakah penumpang prioritas atau biasa
+                    Penumpang p = AturanPenumpang.tentukan(umur, hamil) == JenisPenumpang.PRIORITAS ?
+                            new PenumpangPrioritas(id, nama, umur, hamil) :
+                            new PenumpangBiasa(id, nama, umur, hamil);
+
+                    if (bus.naikkan(p))
+                        System.out.println("Penumpang berhasil ditambahkan!");
+                    else
+                        System.out.println("Gagal menambahkan penumpang (bus penuh atau saldo kurang).");
+
+                    System.out.println("------------------------------------");
+                    break;
+
+
 
     
