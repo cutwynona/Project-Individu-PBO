@@ -61,6 +61,6 @@ Project ini merupakan simulasi sistem manajemen penumpang pada Bus Nusa Ride, ya
 11. **Exception Handling** – Custom exception `SaldoTidakCukup` digunakan saat saldo penumpang tidak mencukupi.
 
 
-
-
+### **Tampilan Output Program**
+<img width="1733" height="651" alt="Screenshot 2025-12-08 181440" src="https://github.com/user-attachments/assets/667863ca-6535-4c0a-b799-221e6f387bd5" />
 
