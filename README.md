@@ -1,6 +1,7 @@
 # Project-Individu-PBO
 Cut Wynona Andromeda - 2408107010097
 
+## **Deskripsi Project**
 
 **Sistem Manajemen Penumpang Bus Nusa Ride**
 Project ini merupakan simulasi sistem manajemen penumpang pada Bus Nusa Ride, yang dibangun menggunakan bahasa pemrograman Java. Program ini menerapkan konsep Object-Oriented Programming (OOP). Tujuan sistem ini adalah mengatur proses naik–turun penumpang, membedakan penumpang kursi prioritas dan biasa, serta menangani penumpang berdiri ketika kursi penuh. Sistem juga mengelola data penumpang dan saldo mereka untuk pembayaran ongkos, memastikan kapasitas bus tidak terlampaui, serta menghitung total pendapatan dari setiap penumpang yang berhasil naik.
@@ -10,14 +11,13 @@ Project ini merupakan simulasi sistem manajemen penumpang pada Bus Nusa Ride, ya
 
 1. **Menambahkan Penumpang (Naik Bus)**
 
-   * Menentukan jenis penumpang: biasa atau prioritas
-   * Menempatkan penumpang ke:
-
-     * Kursi prioritas
-     * Kursi biasa
-     * Area berdiri
-   * Mengecek saldo sebelum naik
-   * Menambah pendapatan bus ketika penumpang berhasil naik
+  * Sistem menentukan jenis penumpang secara otomatis: **Biasa** atau **Prioritas**.
+  * Penempatan penumpang sesuai kategori dan kapasitas bus:
+    * **Kursi Prioritas:** maksimal 4 penumpang prioritas. Hanya penumpang prioritas yang duduk di sini.
+    * **Kursi Biasa:** maksimal 16 penumpang biasa. Penumpang prioritas bisa duduk di sini jika kursi prioritas penuh.
+    * **Area Berdiri:** maksimal 20 penumpang berdiri, digunakan jika kursi penuh.
+  * Sistem mengecek **saldo penumpang** sebelum naik, ongkos Rp 2.000 otomatis dipotong jika cukup.
+  * Pendapatan bus bertambah sesuai ongkos penumpang yang berhasil naik.
 
 2. **Menghapus Penumpang (Turun Bus)**
 
